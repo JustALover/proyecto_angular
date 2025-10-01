@@ -10,6 +10,7 @@ import { Universidad } from '../models/universidad';
 export class TareasNuevas {
 
 }
+
 export class Tareas {
   tareas: Tarea[] = [];
   nuevaTarea: string = '';
@@ -23,10 +24,13 @@ tarea: Tarea = {
     fechaVencimiento: new Date('2025-10-31'),
     };
 
-  agregarTarea() {
-    if (this.nuevaTarea.trim() !== '') {
-    //  this.tareas.push(this)
+  agregarTarea(nombreTarea: string) {
+    // crear una nueva tarea solo si el campo esta vacio
+    if (nombreTarea !== '') {
+    //  Imprimir verdadero
+    console.log
     }
   }
 }
 //Revisar :D
+
