@@ -1,6 +1,20 @@
 <p>TAREAAAAAS!!!</p>
 
 <div>
-    <input>
-    <button></button>
+
+    <input [(ngModel)]="nuevaTarea" placeholder="Escribe algo"/> 
+    <button (click)="agregarTarea(nuevaTarea)">Mi parte favorita de la tarea es cuando dice es hora de tarearear y tarearea</button>
+    
 </div>
+
+
+<ul>
+    @for (tarea of tareas; track tarea; let i = $index) {
+    <li>
+        {{tarea.descripcion}}
+
+        <!--<button (click)="eliminarTarea(i)"> X</button>-->
+    </li>
+
+    }
+</ul>
